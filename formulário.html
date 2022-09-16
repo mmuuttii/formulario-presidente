@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <div class="page">
+
+        <div>
+            <header>
+                <h1>Quem seria o melhor presidente do Brasil?</h1>
+            </header>
+        </div>
+
+        <form action="">
+            <fieldset>
+                <div class="legend">
+                    <legend>
+                        eleições 2022         
+                    </legend>
+                </div>
+
+                <div class="wrapper-name">
+                    <div >
+                        <label for="page"> Nome </label>
+                        <input type="text" required placeholder="Nome">
+                    </div>
+
+                    <div>
+                        <label for="page">Sobrenome</label>
+                        <input type="text" placeholder="Sobrenome" required>
+                    </div>
+                    
+                </div>
+                
+                <div class="wrapper-input-age">
+
+                    <div class="age">
+                        <label for="page">Idade</label>
+                        <input type="number" placeholder="idade" required>
+                    </div>
+                    
+                </div>
+
+                
+                <h2>Escolha seu candidato</h2>
+
+                <div class="wrapper-img">
+                    <div class="cards">
+                        <img src="./Imagens/Coring.jpg" alt="Coringa">
+                        <h3>coringa</h3>
+                    </div>
+
+                    <div class="cards">
+                        <img src="./Imagens/1752217890-theboys-homelander.webp" alt="Capitão patria">
+                        <h3>Capitão  patria</h3>
+                    </div>
+
+                    <div class="cards">
+                        <img src="./Imagens/Lex_Luthor.webp" alt="Coringa">
+                        <h3>Lex Luthor</h3>
+                    </div>
+
+                    <div class="cards">
+                        <img src="./Imagens/magneto.jpg" alt="Coringa">
+                        <h3>Magneto</h3>
+                    </div>
+                </div>
+
+            <div class="wrapper-input">
+                <label for="page" >Defina o porquê dele ser o melhor presidente <span>(mínimo 50 caracteres)</span></label>
+                <div class="wrapper-text">
+                    <textarea name="Motivo" id="" cols="30" rows="10" required minlength="50"></textarea>
+                </div>
+                
+                <div class="p">
+                <button type="submit">
+                    Votar
+                </button>
+            </div>
+            </div>
+
+            </div>
+
+            </fieldset>
+        </form> 
+    </div>
+    
+
+</body>
+</html>

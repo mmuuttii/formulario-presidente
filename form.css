@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --bg-hearder:#08e1ae;
+    --bg-body:rgb(205, 228, 237);
+    --bg-input:#7d93e3;
+
+    --ff-header:'Mulish';
+    --ff-body:'DM Sans', 'sans-serif';
+
+    --fc-primary:#23395d;
+
+}
+
+body::before{  
+    content: '';
+    position: absolute;
+    background: var(--bg-hearder);
+
+    width: 100%;
+    height: 40.0rem;
+
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+
+body{
+    padding: 3rem;
+
+    font-size: 1.6rem;
+    font-family: var(--ff-header);
+    background: var(--bg-body);
+    
+}
+
+
+.page {
+   
+    margin: auto;
+    padding-top: 5.0rem;
+
+    max-width: 82.0rem;
+}
+
+header{
+    color: var(--fc-primary);
+
+    max-width: 40.0rem;
+    line-height: 5.0rem;
+    text-transform: uppercase;
+}
+
+form{
+    margin-top: 7rem;
+    background:#ffffff;
+    line-height: 4.0rem;
+    padding: 8.0rem 4.0rem 2rem;
+    
+    border-radius: 2rem 0rem 2rem 0rem;
+    width: 100%;
+    
+  
+}
+
+fieldset{
+    border: none;
+}
+
+form fieldset legend {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    font-family: var(--ff-body);
+    width: 100%;
+
+    border-bottom: 1px solid #ccc ;
+}
+
+form input{
+    border-radius: 1.0rem;
+    padding: 4px;
+}
+
+.wrapper-name{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10rem;
+    margin-top: 5.0rem;
+    
+}
+.wrapper-name label {
+    display: block;
+}
+
+.age{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.age input{
+    max-width: 7.0rem;
+}
+
+
+h2{
+
+    margin-top: 5.0rem;
+}
+
+.wrapper-img{
+    margin-top: 5.0rem;
+    display: flex;
+    gap: 22px;
+    position: relative;
+    height: auto;
+}
+
+.cards:hover{
+    cursor: pointer;
+    scale: 1.2;
+    transition: 400ms;
+    filter:blur(0)
+}
+.cards{
+    filter:blur(2px);
+}
+
+
+.cards img{
+    object-fit: cover;
+    height: 15.0rem;
+    border-radius: 1rem;
+    width: 100%;
+    position: relative;
+    
+}
+
+.cards h3 {
+    color: rgb(255, 254, 254);
+    font-size:  1.4rem;
+    position: absolute;
+    top:10.0rem;
+    
+    border-radius: 8px;
+    background: var(--bg-input);
+    
+}
+
+
+.wrapper-input span{
+    color: #ccc;
+}
+
+.wrapper-input span:hover {
+
+    color: rgb(26, 19, 19);
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 2rem;
+} 
+
+
+.wrapper-input button {
+    border: none;
+    background: var(--bg-input);
+    color: var(--bg-body);
+    padding: 1rem 8rem 1rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+}
+
+.wrapper-input button:hover{
+    cursor: pointer;
+    background: #3960ee;
+}
+
+.p{
+    text-align: center;
+}
+
+form{
+    animation: downtop 700ms;
+}
+
+@keyframes downtop {
+    0%{
+        opacity: 0;
+        transform: translateY(-55px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 560px) {
+     
+    .wrapper-name{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .wrapper-img {
+        display: flex;
+        flex-direction: column;
+
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
